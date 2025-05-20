@@ -1,0 +1,118 @@
+#event-item {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20%;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: transform 0.2s ease-in-out;
+    border: 2px solid black;
+    color: black;
+    padding-bottom: 5px;
+    position: relative;
+    background-color: #f7f1df;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+#event-item:hover {
+    transform: scale(1.02);
+    border-radius: 10px;
+    animation: backgroundGlow 2s ease-in-out infinite alternate;
+    cursor: pointer;
+}
+
+#event-item-title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #93c4a0;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    height: 40px;
+    color: black;
+    font-size: 20px;
+    position: relative;
+}
+
+#event-title {
+    position: absolute;
+    top: 20%;
+}
+
+#event-item-date {
+    padding-right: 12px;
+}
+
+#event-item-language {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#event-item-time {
+    margin-right: auto;
+}
+
+#times-container {
+    display: flex;
+}
+
+#date-item-and-time {
+    display: flex;
+    margin-left: 10px;
+    width: 98%;
+    position: absolute;
+    left: -6px;
+    bottom: 2px;
+}
+
+#event-item-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+#item-location-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5px;
+    position: absolute;
+    right: 0;
+    top: 72%;
+}
+
+#event-item-attendees {
+    padding-left: 5px;
+}
+
+.attendees-flags {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    height: 40%;
+    width: 101%;
+    padding-top: 2px;
+}
+
+.flags {
+    display: flex;
+}
+
+.flag {
+    width: 60px;
+    height: auto;
+    align-self: end;
+    height: 30px;
+    margin-bottom: 2px;
+}
+
+.map-flag {
+    width: 40px;
+    margin-right: 7px;
+    height: auto;
+}

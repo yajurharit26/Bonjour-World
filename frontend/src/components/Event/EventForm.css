@@ -1,0 +1,292 @@
+.create-event-modal,
+.update-event-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    height: 600px;
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-form {
+    padding: 20px;
+    background-color: #93c4a0;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.event-form h2 {
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+    /* margin-bottom: 20px; */
+    margin-top: 10px;
+    font-family: 'BrandierTrial-SemiBoldItalic';
+}
+
+.event-form .selects {
+    /* all: unset; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 13px;
+    /* border: 1px solid blue; */
+}
+
+.event-form .select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.event-form .errors {
+    color: red;
+    font-size: 0.8rem;
+}
+
+.lang-error {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.time-error {
+    /* margin-left: 5px; */
+    position: absolute;
+    right: 90px;
+    top: 75px;
+}
+
+.title-error {
+    position: absolute;
+    top: 270px;
+    left: 420px;
+}
+
+.date-error {
+    position: absolute;
+    top: 315px;
+    left: 420px;
+}
+
+.address-error {
+    position: absolute;
+    left: 420px;
+    top: 360px;
+}
+
+.description-error {
+    position: absolute;
+    text-align: center;
+    bottom: 100px;
+}
+
+.event-form select {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    height: 100%;
+    font-size: 0.95rem;
+}
+
+.time-select {
+    margin-top: 8px;
+    white-space: nowrap;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #0a345b;
+    color: white;
+    font-size: 0.75rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.languages-container {
+    margin-top: 10px;
+    /* border: 1px solid blue; */
+    margin-right: 10px;
+}
+
+.lang-btn {
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    margin-top: 8px;
+    white-space: nowrap;
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    height: 22px;
+    border: none;
+    font-size: 0.75rem;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    text-align: center;
+    min-width: fit-content
+}
+
+.event-unselect-btn {
+    background-color: #0a345b;
+    color: white;
+}
+
+.event-select-btn {
+    cursor: pointer;
+    background-color: #f7f1df;
+    color: black;
+}
+
+.x-button {
+    height: 20px;
+    width: 20px;
+    margin-left: 0.3em;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.event-form .inputs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+
+.event-form input {
+    padding: 8px;
+    margin-top: 8px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 200px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.event-form input::placeholder {
+    color: gray;
+    font-size: 1rem;
+}
+
+.event-form textarea {
+    resize: none;
+    outline: none;
+    border-radius: 5px;
+    height: 120px;
+    width: 500px;
+    max-height: 120px;
+    max-width: 500px;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.event-form input[type='submit'] {
+    background-color: #0a345b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    height: 7%;
+    margin-top: 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.event-form input[type='submit']:hover {
+    transform: scale(1.05);
+}
+
+/* .autocomplete-dropdown-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* Add your global styles or import a stylesheet */
+
+.autocomplete-container {
+    position: relative;
+    width: 300px;
+    /* Adjust the width as needed */
+}
+
+.autocomplete-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.autocomplete-dropdown-container {
+    position: absolute;
+    top: 61%;
+    left: 25%;
+    /* text-align: center; */
+    width: 50%;
+    /* border: 1px solid #ccc; */
+    background-color: #f7f1df;
+    backdrop-filter: blur 40px;
+    max-height: 200px;
+    overflow-y: auto;
+    color: black;
+    border-radius: 10px;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #002ca770;
+    color: black;
+}
+
+.top-language-container {
+    display: flex;
+    /* border: 3px solid green; */
+}
+
+.bottom-language-container {
+    display: flex;
+    /* border: 3px solid red; */
+}
+
+.left-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}

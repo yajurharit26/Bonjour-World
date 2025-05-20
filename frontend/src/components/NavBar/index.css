@@ -1,0 +1,117 @@
+.nav-bar {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+    background-color: #0A345B;
+    /* background-color: black; */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-bar-header {
+    font-size: 2rem;
+    margin: 0px;
+    color: white;
+    font-family: 'BrandierTrial-SemiBoldItalic';
+    margin-left: 25px;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+/* logged out links */
+
+.logged-out-links {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    gap: 5px;
+}
+
+.logged-out-links .signup-button, .login-button {
+    height: 30px;
+    width: 90px;
+    margin-left: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3ch;
+    background-color: #FBE1B5;
+    color: black;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+ .signup-button:hover,
+ .login-button:hover {
+     transform: scale(1.05);
+ }
+
+ .logged-out-links a {
+     margin-left: 10px;
+     border: none;
+     color: white;
+     cursor: pointer;
+     text-decoration: none;
+     white-space: nowrap;
+     display: inline-block;
+     text-align: center;
+     font-size: 1rem;
+ }
+
+ .logged-out-links a:hover {
+     text-decoration: underline;
+ }
+
+/* logged in links */
+
+.logged-in-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 25px;
+}
+
+#all-events {
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+#about-us {
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#create-event-button {
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    background: transparent;
+    font-size: 1rem;
+    margin-top: 1px;
+    padding: 0;
+}
+
+#create-event-button:hover, #all-events:hover, #about-us:hover {
+    text-decoration: underline;
+}
+
+#all-events.active, #about-us.active,
+.logged-out-links .active {
+    color: #A2D5C6;
+    text-decoration: underline;
+}

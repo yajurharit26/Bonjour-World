@@ -1,0 +1,135 @@
+.user-guide-section .instruction {
+  opacity: 0;
+  transform: translateX(-250px);
+  transition: opacity 0.9s ease, transform 2s ease;
+}
+
+.user-guide-section .slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.user-guide-section .slide-left {
+  transform: translateX(-250px);
+}
+
+.user-guide-section .slide-right {
+  transform: translateX(250px);
+}
+
+.user-guide-section .instruction.slide-left.slide-in,
+.user-guide-section .instruction.slide-right.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.user-guide-section {
+  height: 3000px;
+  width: 100vw;
+  background: linear-gradient(to bottom, white, #93c4a0);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #93c4a0;
+}
+
+.user-guide-section .instruction-div {
+  padding: 50px;
+  height: 400px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.user-guide-section .auth {
+  background-color: #93c4a0;
+  color: white;
+  border-radius: 5px;
+}
+
+.user-guide-section .event {
+  background-color:#0A345B;
+  color: white;
+  border-radius: 5px;
+}
+
+.user-guide-section .host-or-join {
+  background-color: #93c4a0;
+  color: white;
+  border-radius: 5px;
+}
+
+.user-guide-section .customize-profile {
+  background-color: #0A345B;
+  color: white;
+  border-radius: 5px;
+}
+
+.back-to-top {
+  position: fixed;
+  background-color: transparent;
+  z-index: 1000;
+  bottom: 20px;
+  right: 20px;
+  /* border: none; */
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.back-to-top-icon {
+  color: white;
+  font-size: 50px;
+}
+
+/* .back-to-top:hover {
+  border: 1px solid #A2D5C6;
+}
+
+.back-to-top-icon:hover {
+  color: #A2D5C6;
+} */
+
+.user-guide-section .instruction-sign-up-div,
+.user-guide-section .instruction-event-div,
+.user-guide-section .instruction-host-div,
+.user-guide-section .instruction-profile-div {
+  margin-top: 30px;
+  height: 500px;
+  width: 500px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.user-guide-section .instruction-sign-up-div {
+  width: 80%;
+  background-image: url("../../static/images/user-guide/signup.png");
+  object-fit: cover;
+}
+
+.user-guide-section .instruction-event-div {
+  background-image: url("../../static/images/user-guide/exchanges.png");
+  object-fit: cover;
+  width: 80%;
+}
+
+.user-guide-section .instruction-host-div {
+  background-image: url("../../static/images/user-guide/host-exchange.png");
+  object-fit: cover;
+  width: 80%;
+}
+
+.user-guide-section .instruction-profile-div {
+  background-image: url("../../static/images/user-guide/user-profile.png");
+  object-fit: cover;
+  width: 80%;
+}

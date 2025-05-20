@@ -1,0 +1,138 @@
+.update-user-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-settings-form {
+    padding: 20px;
+    background-color: #93c4a0;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.user-settings-form h2 {
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'BrandierTrial-SemiBoldItalic';
+}
+
+.user-settings-form .errors {
+    color: red;
+    font-size: 0.8rem;
+}
+
+.lang-error {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.user-settings-form .username-error {
+    position: absolute;
+    top: 60px;
+    left: 146px;
+    white-space: nowrap;
+}
+
+.user-settings-form .email-error {
+    position: absolute;
+    top: 115px;
+    left: 260px;
+    white-space: nowrap;
+}
+
+.your-languages {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.languages-container {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.x-button {
+    height: 20px;
+    width: 20px;
+    margin-left: 0.3em;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.user-settings-form .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30%;
+}
+
+.inputs .username-div,
+.inputs .email-div {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.inputs label {
+    margin-right: 10px;
+    width: 90px;
+    display: block;
+    margin: 0;
+}
+
+.user-settings-form input {
+    padding: 8px;
+    margin-top: 8px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 200px;
+    outline: none;
+    font-size: 1rem;
+}
+
+#email,
+#username {
+    margin-left: 10px;
+}
+
+.user-settings-form input::placeholder {
+    color: gray;
+    font-size: 1rem;
+}
+
+.user-settings-form input[type='submit'] {
+    background-color: #0a345b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    height: 10%;
+    margin-top: 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.user-settings-form input[type='submit']:hover {
+    transform: scale(1.05);
+}

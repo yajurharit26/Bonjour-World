@@ -1,0 +1,79 @@
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.display-meet-the-team {
+  margin-top: 50px;
+  animation: fade 4s infinite;
+  opacity: 0;
+  font-size: 500%;
+  color: #2c5f9f;
+  white-space: nowrap;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  font-family: 'BrandierTrial-SemiBoldItalic';
+}
+
+.team-members-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%
+}
+
+.team-member {
+  text-align: center;
+  margin: 20px;
+  font-size: 25px;
+  font-family: 'BrandierTrial-SemiBoldItalic';
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+}
+
+.member-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.member-details p {
+  font-weight: bold;
+  font-size: 25px;
+  color: #2c5f9f;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #3a5f94;
+  font-size: 40px
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+
+.team-member-img {
+  border-radius: 50%; 
+  max-width: 100%;
+  max-height: 200px; 
+  height: auto;
+  object-fit: cover; 
+}

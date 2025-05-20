@@ -1,0 +1,64 @@
+.profile-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.profile-btn-icon {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.profile-btn-icon:hover {
+  color: #93c4a0;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 80%;
+  right: .5%;
+  list-style: none;
+  background: #93c4a0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  font-size: .9rem;
+}
+
+/* .profile-dropdown hr {
+  width: 95%;
+border: 1px solid black;
+} */
+
+.profile-dropdown li {
+  padding: 5px;
+}
+
+#profile-link {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  background: transparent;
+  font-size: 13px;
+}
+
+#profile-link:hover {
+  text-decoration: underline;
+}
+
+.profile-dropdown .logout-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  font-size: 13px;
+}
+
+.profile-dropdown .logout-button:hover {
+  text-decoration: underline;
+}

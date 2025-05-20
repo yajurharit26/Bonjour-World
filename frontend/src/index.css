@@ -1,0 +1,61 @@
+@import './reset.css';
+
+body {
+    font-family: Poppins, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+@font-face {
+    font-family: 'BrandierTrial-SemiBoldItalic';
+    src: url('./static/fonts/brandier/BrandierTrial-SemiBold.otf')
+        format('truetype');
+}
+
+button {
+    cursor: pointer;
+    user-select: none;
+}
+
+.main-page {
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.link-to-other-modal {
+    color: #0a345b;
+    font-size: 0.8rem;
+}
+
+.link-to-other-modal span {
+    cursor: pointer;
+    color: black;
+    margin-left: 0.5vh;
+}
+
+.link-to-other-modal span:hover {
+    color: #0a345b;
+    text-decoration: underline;
+}
+
+
+/* for google translate */
+
+/* hide banner  */
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+    display: none;
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0px !important;
+}
+
+/* style select */
+.goog-te-gadget-simple {
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 5px;
+}

@@ -1,0 +1,19 @@
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+background: rgba(0, 0, 0, 0.7);
+z-index: 1000;
+}
+
+.otp-modal {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 90vw;
+  padding: 20px;
+  animation: fadeIn 0.3s ease-in-out;
+}

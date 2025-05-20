@@ -1,0 +1,341 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.map-container {
+    height: 95.5vh;
+    width: 100%;
+}
+
+.event-show-index {
+    display: flex;
+    width: 100vw;
+    padding-top: 45px;
+    /* background: linear-gradient(to bottom, #FBE1B5, white); */
+    /* background: linear-gradient(to bottom, #fbe1b5, #b5cffb); */
+    /* background: linear-gradient(to bottom, white, #93c4a0); */
+    background: white;
+}
+
+.display-one-event {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 50%;
+    height:800px;
+    /* border: 3px solid #A2D5C6; */
+    /* margin-top: 20px; */
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 2%;
+    /* background-color: #F7F1DF; */
+    /* background: linear-gradient(to bottom, white, #93c4a0); */
+    margin-left: 10px;
+}
+
+.event-info-list span {
+    margin-top: 10px;
+}
+
+.event-details div {
+    padding-top: 5px;
+    /* background-color: #F7F1DF; */
+}
+
+/* .google-maps-show-container {
+    padding: 20px;
+    pointer-events: none;
+    height: 100vh;
+    width: 596px;
+} */
+
+.event-info-list .event-title {
+    position: relative;
+    /* height: 100px; */
+    width: 100%;
+    font-weight: bolder;
+    font-size: 30px;
+    /* Center the text horizontally */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: cente; */
+    /* align-items: center; */
+    /* Adjust the top margin as needed */
+}
+
+.event-info-list {
+    margin: 15px;
+    margin-right: 25px;
+}
+
+.event-title-host {
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    font-size: 15px;
+
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    height: 600px;
+    margin-left: 10px;
+    
+}
+
+.event-description-div {
+    font-weight: bolder;
+    width: 100%;
+}
+
+.event-description {
+    font-weight: 100;
+}
+
+.event-date-div {
+    font-weight: bold;
+}
+
+.event-date {
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+}
+
+.event-time-div {
+    font-weight: bold;
+}
+
+.event-time {
+    font-weight: 100;
+}
+
+.event-location-div {
+    font-weight: bold;
+}
+
+.event-location {
+    font-weight: 100;
+}
+
+.event-address-div {
+    font-weight: bold;
+}
+
+.event-address {
+    font-weight: 100;
+}
+
+
+.edit-event {
+    /* margin-left: 10px; */
+    height: auto;
+    width: 75px;
+    padding: 5px ;
+    display: inline-block;
+    border: 1px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 2;
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+
+.delete-event {
+    /* margin-left: 10px; */
+    height: auto;
+    width: 75px;
+    padding: 5px;
+    display: inline-block;
+    border: 1px;
+    background-color: #A10800;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 2;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+}
+
+.join-event {
+    /* margin-left: 10px; */
+    height: auto;
+    width: 140px;
+    padding: 5px;
+    display: inline-block;
+    border: 1px;
+    background-color: #00573F;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 2;
+    cursor: pointer;
+}
+
+.unjoin-event {
+    /* margin-left: 10px; */
+    height: auto;
+    width: 110px;
+    padding: 5px 10px;
+    display: inline-block;
+    border: 1px;
+    background-color: #00573F;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 2;
+    cursor: pointer;
+}
+
+.event-show-index button:hover {
+    transform: scale(1.05);
+}
+
+.attendee-details {
+    align-items: center !important;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.attendee-pfp {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#no-underline {
+    text-decoration: none;
+    color: black;
+}
+
+#attendee-username {
+    position: relative;
+    font-size: 15px;
+    bottom: 20px;
+}
+
+#attendee-username:hover {
+    text-decoration: underline;
+}
+
+.event-date-time {
+    display: flex;
+    flex-direction: column;
+    /* border: solid #b5cffb; */
+    /* background-color: #b5cffb; */
+    width: 100%;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.event-date-time div {
+    padding: 5px;
+}
+
+.event-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-icon {
+    position: relative;
+    top: 2px;
+}
+
+.event-attendees {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* padding: 10px; */
+    padding-top: 10px;
+    /* margin-top: 10px; */
+}
+
+.attendees {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content
+    /* font-size: 10px; */
+}
+
+.event-show {
+    width: 100%;
+    height: 20px !important;
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    background-color: #F7F1DF;
+}
+
+.event-title {
+    background-color: #93c4a0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.event-languages {
+    display: flex;
+}
+
+.event-lang {
+    white-space: nowrap;
+    border-radius: 20px;
+    min-width: fit-content;
+    background-color:  #0A345B;
+    color: white;
+    font-size: .9rem;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    height: 30px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.event-buttons button {
+    margin-right: 5px
+}
+
+em {
+    font-style: italic;
+}
+
+.event-request {
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#host-name {
+    text-decoration: none;
+    color: black;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+#host-name:hover {
+    text-decoration: underline;
+}

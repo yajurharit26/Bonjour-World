@@ -1,0 +1,99 @@
+.signup-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 330px;
+    width: 420px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #93c4a0;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    gap: 12px;
+}
+
+.signup-form h2 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.signup-form .row-1,
+.signup-form .row-2,
+.signup-form .row-3 {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.signup-form .input-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form input {
+    padding: 8px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.signup-form input::placeholder {
+    color: gray;
+}
+
+.signup-form .errors {
+    color: red;
+    margin-top: 10px;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: -37px;
+}
+
+.signup-form input[type='submit'] {
+    margin-top: 20px;
+    background-color: #0a345b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    height: 35px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.signup-form input[type='submit']:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: black;
+}
+
+.signup-form input[type='submit']:hover {
+    transform: scale(1.05);
+}
+
+.signup-form input[type='submit']:disabled {
+    transform: none;
+}
+
+

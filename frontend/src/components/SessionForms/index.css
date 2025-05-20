@@ -1,0 +1,88 @@
+/* Existing CSS styles */
+
+/* OTP Form Styles */
+.otp-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90vw;
+}
+
+.otp-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.otp-instruction {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.otp-input-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.otp-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 8px;
+    font-weight: bold;
+}
+
+.verify-otp-button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.verify-otp-button:hover {
+    background-color: #3367d6;
+}
+
+.verify-otp-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.resend-otp {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.resend-link {
+    color: #4285f4;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.countdown {
+    color: #888;
+    font-style: italic;
+}
+
+/* Existing login and signup form styles */
+.login-form, .signup-form {
+    /* Keep existing styles */
+}
+
+/* ... rest of your existing CSS ... */

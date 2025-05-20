@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <title>Bonjour World</title>
+        <link rel="icon" href="./globe-but-better.png" />
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    {
+                        pageLanguage: 'en',
+                        layout: google.translate.TranslateElement.InlineLayout
+                            .SIMPLE,
+                    },
+                    'google_translate_element'
+                );
+            }
+        </script>
+
+        <script
+            type="text/javascript"
+            defer
+            src="https://maps.googleapis.com/maps/api/js?key=%REACT_APP_MAPS_API_KEY%&libraries=places"
+        ></script>
+
+        <script
+            type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        ></script>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+    </body>
+</html>

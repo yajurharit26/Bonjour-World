@@ -1,0 +1,9 @@
+.globe-container {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+  /* position: relative; */
+  /* top: 30%; */
+  /* left: 12%; */
+}
